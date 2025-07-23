@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>產品型錄</title>
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      background-color: #000;
+    }
+    .swiper {
+      height: 100vh;
+    }
+    .swiper-slide img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <!-- 將以下 img src 換成你的圖片檔案名稱 -->
+      <div class="swiper-slide"><img src="01.Cover" /></div>
+      <div class="swiper-slide"><img src="02.fish oil" /></div>
+      <div class="swiper-slide"><img src="03.fish oil" /></div>
+      <div class="swiper-slide"><img src="04.sucrosomial" /></div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      direction: 'horizontal',
+      loop: false,
+      spaceBetween: 10,
+    });
+  </script>
+</body>
+</html>
