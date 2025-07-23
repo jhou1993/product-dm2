@@ -3,11 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>產品型錄</title>
-  <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-  />
+  <title>產品圖片瀏覽</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
   <style>
     html, body {
       margin: 0;
@@ -28,20 +25,28 @@
 <body>
   <div class="swiper">
     <div class="swiper-wrapper">
-      <!-- 將以下 img src 換成你的圖片檔案名稱 -->
-      <div class="swiper-slide"><img src="01.Cover" /></div>
-      <div class="swiper-slide"><img src="02.fish oil" /></div>
-      <div class="swiper-slide"><img src="03.fish oil" /></div>
-      <div class="swiper-slide"><img src="04.sucrosomial" /></div>
+      <div class="swiper-slide"><img src="01.Cover.jpg" /></div>
+      <div class="swiper-slide"><img src="02.fish oil.jpg" /></div>
+      <div class="swiper-slide"><img src="03.fish oil.jpg" /></div>
+      <div class="swiper-slide"><img src="04.sucrosomial.jpg" /></div>
+      <div class="swiper-slide"><img src="05.cultavit.jpg" /></div>
+      <div class="swiper-slide"><img src="06.ovomet.jpg" /></div>
+      <div class="swiper-slide"><img src="07.ovocet.jpg" /></div>
+      <div class="swiper-slide"><img src="08.beauty.jpg" /></div>
+      <div class="swiper-slide"><img src="09.white.jpg" /></div>
+      <div class="swiper-slide"><img src="10.slim.jpg" /></div>
+      <div class="swiper-slide"><img src="11.sleep.jpg" /></div>
+      <div class="swiper-slide"><img src="12.Last.jpg" /></div>
     </div>
   </div>
-
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
     const swiper = new Swiper('.swiper', {
       direction: 'horizontal',
       loop: false,
       spaceBetween: 10,
+      centeredSlides: true,
+      zoom: true,
     });
   </script>
 </body>
